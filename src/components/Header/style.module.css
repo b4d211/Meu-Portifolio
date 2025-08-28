@@ -1,0 +1,205 @@
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 32px; 
+    h1{
+        color: #fff;
+        font-weight: 400;
+    }
+
+
+    .searchIcon{
+        display: none;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        @media (max-width:880px) {
+            display: flex;
+        }
+        .menuIcon{
+            display: none;
+            border: 0;
+            background: transparent;
+            cursor: pointer;
+            @media (max-width:520px){
+                display: flex;
+            }
+        }
+    }
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;    
+        a{
+            color: white;
+            text-decoration: none;
+            font-family: "Figtree", sans-serif;
+            &:hover{
+                color: #36c636;
+            }
+        }
+        @media (max-width:520px) {
+            display: none;
+        }
+    }
+    .busca{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #464646;
+        padding: 4px 8px;
+        border-radius: 6px;
+        max-width: 400px;
+        width: 100%;
+
+        input{
+            flex: 1;
+            outline: none;
+            background: transparent;
+            border: 0;
+            font-size: 16px;
+            color: white;
+        }
+        &:focus-within{
+            outline: solid #36c636 2px;
+        }
+        @media (max-width:880px) {
+            display: none;
+        }
+    }
+}
+
+.overlayMenuLateral{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0, 0.5);
+    display: flex;
+    align-items: flex-start;
+    z-index: 5;
+}
+
+.menuLateral{
+    background-color: #fff;
+    width: 250px;
+    max-width: 80%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button{
+        background: none;
+        cursor: pointer;
+        border: 0;
+    }
+}
+
+.navMenuLateral{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+.overlayPesquisar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+.pesquisaContainer{
+    background: #fff;
+    padding: 16px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.pesquisaInput{
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+}
+.loginItens{
+    button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14.93px;
+        background: none;
+        cursor: pointer;
+        border: 0;
+        color: white;
+        text-decoration: none;
+        font-family: "Figtree", sans-serif;
+        &:hover{
+            color: #36c636;
+        }
+    }
+}
+.loginbutton{
+
+}
+.overlayLogin{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+.loginContainer{
+    background: #fff;
+    padding: 16px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    flex-direction: column;
+    h1{
+        color: #36c636;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 35px;    
+    }
+    a{
+        background-color: #36c636;
+        padding: 15px;
+        border-radius: 9px;
+        color: white;
+        font-family: "Figtree", sans-serif;
+        text-decoration: none;
+        font-size: 30px;
+    }
+}
+.loginInput{
+    border-radius: 9px;
+    outline: none;
+    padding: 8px;
+    font-size: 20px;
+}
